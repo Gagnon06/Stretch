@@ -1,8 +1,11 @@
 # Casper
+A theme for [Ghost](http://github.com/tryghost/casper/). It is a more web site looking version of the theme [Casper](http://github.com/tryghost/casper/).
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+New functionnalities :
+- Navigation bar
+- more to come...
 
-To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
+This project use UI elements of the [Bootstrap](http://getbootstrap.com) framework.
 
 ## Copyright & License
 
