@@ -1,0 +1,63 @@
+/*Fichier CSS modifiant l'apparence du thème par défaut de Ghost (Casper) pour un design plus personalisé.*/
+
+
+.navbar {
+    position: absolute;
+    top: 325px;
+    background: rgba(0,0,0,0);
+    background-image: none;
+    background-repeat: repeat-x;
+    border-color: none;
+    filter: none;
+}
+
+ul.nav li a {
+    color: #fff;
+    text-transform: uppercase;
+    transition: all ease 0.3s;
+    margin: 8px 10px 8px 10px;
+    padding: 8px 12px 8px 12px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
+
+ul.nav li a:hover {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.7);
+}
+
+ul.nav li a.active {
+    border: 1px solid rgba(255,255,255,0.7);
+}
+
+a.navbar-brand {
+    color: #fff;
+}
+
+.icon-bar {
+    color: #fff;
+}
+
+.main-header {
+    height: 60%;
+}
+
+.post-header {
+    height: 50%;
+}
+
+.main-nav.overlay .back-button {
+    background: none;
+    border: transparent 1px solid;
+}
+
+.main-nav.overlay .back-button:hover {
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.7);
+}
+
+.scroll-down {
+    display: none;
+}
