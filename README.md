@@ -13,8 +13,8 @@ This project use UI elements of the [Bootstrap](http://getbootstrap.com) framewo
 
 To use this theme you need to copy/clone this project into your themes directory : 
 
-cd /your/ghost/dir/path/content/themes/
-git clone https://github.com/chaos06/Casper.git
+    cd /your/ghost/dir/path/content/themes/
+    git clone https://github.com/chaos06/Casper.git
 
 Restart your server and choose Casper in your blog settings.
 
