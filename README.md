@@ -1,4 +1,4 @@
-# Casper
+# Stretch
 A theme for [Ghost](http://github.com/tryghost/casper/). It is a more web site looking version of the theme [Casper](http://github.com/tryghost/casper/).
 
 A live demo will be available soon...
@@ -14,9 +14,9 @@ This project use UI elements of the [Bootstrap](http://getbootstrap.com) framewo
 To use this theme you need to copy/clone this project into your themes directory : 
 
     cd /your/ghost/dir/path/content/themes/
-    git clone https://github.com/chaos06/Casper.git
+    git clone https://github.com/chaos06/Stretch.git
 
-Restart your server and choose Casper in your blog settings.
+Restart your server and choose Stretch in your blog settings.
 
 ## Copyright & License
 
