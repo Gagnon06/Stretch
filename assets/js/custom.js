@@ -3,20 +3,23 @@
 (function($){
     
     var nav = $('.navbar');
+    var mainHeader = $('.main-header');
     var fixBackground = 'rgba(0,0,0,0.5)';
     var notFixBackground = 'rgba(0,0,0,0)';
-    var navbarTop = parseInt($('.main-header').css('height'),10) - parseInt(nav.css('height'),10);
-    console.log(navbarTop);
-    
+    var navbarTop = parseInt(mainHeader.css('height'),10) - parseInt(nav.css('height'),10);
     nav.css('top',navbarTop);
     
-    
+        
     //Code to set active the button corresponding to the active page
     window.onload = function() {
         $('ul.nav li a.active').removeClass("active");
         $('a[href="'+document.location.pathname+'"]').addClass("active");
         //Mobile navbar
         if($('.navbar-toggle').css("display") == "block") {
+            notFixBackground = 'rgba(0,0,0,0.5)';
+            nav.css('background', 'rgba(0,0,0,0.5)');
+        }
+        else if(mainHeader.hasClass('no-cover')) {
             notFixBackground = 'rgba(0,0,0,0.5)';
             nav.css('background', 'rgba(0,0,0,0.5)');
         }
