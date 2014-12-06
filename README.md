@@ -1,11 +1,22 @@
 # Casper
 A theme for [Ghost](http://github.com/tryghost/casper/). It is a more web site looking version of the theme [Casper](http://github.com/tryghost/casper/).
 
+A live demo will be available soon...
+
 New functionnalities :
 - Navigation bar
 - more to come...
 
 This project use UI elements of the [Bootstrap](http://getbootstrap.com) framework.
+
+## How to install
+
+To use this theme you need to copy/clone this project into your themes directory : 
+
+cd /your/ghost/dir/path/content/themes/
+git clone https://github.com/chaos06/Casper.git
+
+Restart your server and choose Casper in your blog settings.
 
 ## Copyright & License
 
