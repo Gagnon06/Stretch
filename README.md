@@ -16,7 +16,7 @@ To use this theme you need to copy/clone this project into your themes directory
     cd /your/ghost/dir/path/content/themes/
     git clone https://github.com/chaos06/Stretch.git
 
-Restart your server and choose Stretch in your blog settings.
+Restart your server and choose Stretch in your blog settings (yourblog.com/ghost/settings/general/).
 
 ## Copyright & License
 
