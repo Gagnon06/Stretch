@@ -3,7 +3,7 @@
 
 .navbar {
     position: absolute;
-    top: 325px;
+    top: 50%;
     background: rgba(0,0,0,0);
     background-image: none;
     background-repeat: repeat-x;

@@ -2,15 +2,28 @@
 
 (function($){
     
+    var nav = $('.navbar');
+    var fixBackground = 'rgba(0,0,0,0.5)';
+    var notFixBackground = 'rgba(0,0,0,0)';
+    var navbarTop = parseInt($('.main-header').css('height'),10) - parseInt(nav.css('height'),10);
+    console.log(navbarTop);
+    
+    nav.css('top',navbarTop);
+    
+    
     //Code to set active the button corresponding to the active page
     window.onload = function() {
         $('ul.nav li a.active').removeClass("active");
         $('a[href="'+document.location.pathname+'"]').addClass("active");
+        //Mobile navbar
+        if($('.navbar-toggle').css("display") == "block") {
+            notFixBackground = 'rgba(0,0,0,0.5)';
+            nav.css('background', 'rgba(0,0,0,0.5)');
+        }
             
     };
     
     //Sticky Nav bar
-    var nav = $('.navbar');
     var navHomeY = nav.offset().top;
     var isFixed = false;
     var $w = $(window);
@@ -23,7 +36,7 @@
                 top: 0,
                 left: nav.offset().left,
                 width: nav.width(),
-                background: 'rgba(0,0,0,0.5)'
+                background: fixBackground
             });
 
             isFixed = true;
@@ -32,11 +45,13 @@
         {
             nav.css({
                 position: 'absolute',
-                top: 325,
-                background: 'rgba(0,0,0,0.0)'
+                top: navbarTop,
+                background: notFixBackground
             });
             isFixed = false;
         }
     });
+    
+    
 
 })(jQuery);
