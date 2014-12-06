@@ -2,7 +2,7 @@
 A theme for [Ghost](http://github.com/tryghost/casper/). It is a more web site looking version of the theme [Casper](http://github.com/tryghost/casper/).
 
 New functionnalities :
-- Navigation bar (see nav-bar branch)
+- Navigation bar
 - more to come...
 
 This project use UI elements of the [Bootstrap](http://getbootstrap.com) framework.
