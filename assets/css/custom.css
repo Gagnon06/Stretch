@@ -1,5 +1,12 @@
 /*Fichier CSS modifiant l'apparence du thème par défaut de Ghost (Casper) pour un design plus personalisé.*/
 
+.custom-home {
+    display: none;
+}
+
+.custom-blog {
+    display: none;
+}
 
 .navbar {
     position: absolute;
@@ -61,3 +68,4 @@ a.navbar-brand {
 .scroll-down {
     display: none;
 }
+

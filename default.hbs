@@ -42,8 +42,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/aboutme/">À propos</a></li>
-                <li><a href="/">Blog</a></li>
+                <li><a href="/#home" onclick="reload('/#home')">À propos</a></li>
+                <li><a href="/#blog" onclick="reload('/#blog')">Blog</a></li>
                 <li><a href="/projects/">Projets</a></li>
                 <li><a href="/cv/">Curriculum</a></li>
             </ul>
@@ -68,5 +68,12 @@
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/bootstrap.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/custom.js"}}"></script>
+    <script type="text/javascript">
+        function reload(path) {
+            document.location.href = path;
+            document.location.reload();
+            return false;
+        }
+    </script>
 </body>
 </html>

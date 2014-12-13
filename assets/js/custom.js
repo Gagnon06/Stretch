@@ -8,12 +8,31 @@
     var notFixBackground = 'rgba(0,0,0,0)';
     var navbarTop = parseInt(mainHeader.css('height'),10) - parseInt(nav.css('height'),10);
     nav.css('top',navbarTop);
-    
-        
-    //Code to set active the button corresponding to the active page
+
     window.onload = function() {
-        $('ul.nav li a.active').removeClass("active");
-        $('a[href="'+document.location.pathname+'"]').addClass("active");
+        //Code to set active the button and toggle between posts and home page
+        var path = document.location.pathname;
+        var hash = document.location.hash;
+        
+        if((path=="/" && hash=="#home") || (path=="/" && hash!="#blog")) {
+            console.log("HOME");
+            $('ul.nav li a.active').removeClass("active");
+            $('a[href="/#home"]').addClass("active");
+            $('.custom-blog').css('display','none');
+            $('.custom-home').css('display','block');
+        }
+        else if(path=="/" && hash=="#blog") {
+            console.log("BLOG");
+            $('ul.nav li a.active').removeClass("active");
+            $('a[href="/#blog"]').addClass("active");
+            $('.custom-home').css('display','none');
+            $('.custom-blog').css('display','block');
+        }
+        else {
+            $('ul.nav li a.active').removeClass("active");
+            $('a[href="'+path+'"]').addClass("active");
+        }
+        
         //Mobile navbar
         if($('.navbar-toggle').css("display") == "block") {
             notFixBackground = 'rgba(0,0,0,0.5)';
@@ -54,7 +73,5 @@
             isFixed = false;
         }
     });
-    
-    
 
 })(jQuery);
