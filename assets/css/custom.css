@@ -45,11 +45,10 @@ a.navbar-brand {
     color: #fff;
 }
 
-.main-header {
-    height: 60%;
+header.main-header {
+    height: 50%;
 }
-
-.post-header {
+header.post-head {
     height: 50%;
 }
 
