@@ -6,8 +6,8 @@
 {{! Everything inside the #post tags pulls data from the page }}
 {{#post}}
 
-<header class="main-header {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav overlay clearfix">
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
