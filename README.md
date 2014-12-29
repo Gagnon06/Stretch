@@ -4,8 +4,8 @@ A theme for [Ghost](http://github.com/tryghost/casper/). It is a more web site l
 A live demo will be available soon...
 
 New functionnalities :
-- Navigation bar (v1.0.x)
-- Static home page (static-home branch)
+- Navigation bar (v1.0.x +)
+- Static home page (v1.1.x +)
 
 This project use UI elements of the [Bootstrap](http://getbootstrap.com) framework.
 
