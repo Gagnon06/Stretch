@@ -67,4 +67,15 @@ header.post-head {
 .scroll-down {
     display: none;
 }
+a.return-button {
+    color: rgba(0, 0, 0, 0.4);
+    padding: 7px;
+    border: 1px solid transparent;
+    transition: all ease 0.3s;
+    border-radius: 3px;
+}
 
+a.return-button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
